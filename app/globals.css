@@ -1,26 +1,106 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* SPOTLIGHT EFFECT */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
   }
 }
 
+/* GLOBAL */
+
+/* --- Tokens (light mode by default) --- */
+@theme {
+  --color-background: 240 10% 3.9%; /* dark bg */
+  --color-foreground: 0 0% 100%; /* white text */
+
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 240 10% 3.9%;
+
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 240 10% 3.9%;
+
+  --color-primary: 240 5.9% 10%;
+  --color-primary-foreground: 0 0% 98%;
+
+  --color-secondary: 240 4.8% 95.9%;
+  --color-secondary-foreground: 240 5.9% 10%;
+
+  --color-muted: 240 4.8% 95.9%;
+  --color-muted-foreground: 240 3.8% 46.1%;
+
+  --color-accent: 240 4.8% 95.9%;
+  --color-accent-foreground: 240 5.9% 10%;
+
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 0 0% 98%;
+
+  --color-border: 240 5.9% 90%;
+  --color-input: 240 5.9% 90%;
+  --color-ring: 240 10% 3.9%;
+
+  --radius: 0.5rem;
+}
+
+/* --- Dark mode overrides --- */
+.dark {
+  --color-background: 0 0% 100%; /* light bg */
+  --color-foreground: 240 10% 3.9%; /* dark text */
+
+  --color-card: 240 10% 3.9%;
+  --color-card-foreground: 0 0% 98%;
+
+  --color-popover: 240 10% 3.9%;
+  --color-popover-foreground: 0 0% 98%;
+
+  --color-primary: 0 0% 98%;
+  --color-primary-foreground: 240 5.9% 10%;
+
+  --color-secondary: 240 3.7% 15.9%;
+  --color-secondary-foreground: 0 0% 98%;
+
+  --color-muted: 240 3.7% 15.9%;
+  --color-muted-foreground: 240 5% 64.9%;
+
+  --color-accent: 240 3.7% 15.9%;
+  --color-accent-foreground: 0 0% 98%;
+
+  --color-destructive: 0 62.8% 30.6%;
+  --color-destructive-foreground: 0 0% 98%;
+
+  --color-border: 240 3.7% 15.9%;
+  --color-input: 240 3.7% 15.9%;
+  --color-ring: 240 4.9% 83.9%;
+}
+
+/* --- Base styles --- */
+* {
+  @apply border-border !scroll-smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-foreground text-white;
+}
+
+button {
+  @apply active:outline-none;
+}
+
+/* --- Custom utilities --- */
+@utility heading {
+  @apply font-bold text-4xl md:text-5xl text-center;
+}
+
+.black-gradient {
+  background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
 }
