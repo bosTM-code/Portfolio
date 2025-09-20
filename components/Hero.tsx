@@ -3,11 +3,11 @@ import { GridBackground } from "./ui/GridBackground";
 
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./ui/MagicButton";
-import { FaBeer, FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 h-screen">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32
@@ -25,6 +25,7 @@ const Hero = () => {
         />
       </div>
       <GridBackground />
+
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vh] flex flex-col items-center justify-center">
           <h2 className=" uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
