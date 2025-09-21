@@ -38,9 +38,9 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi I&apos;m Sviatoslav
           </p>
-          <a href="#about">
+          <a href="mailto:sberezhnyi@gmail.com">
             <MagicButton
-              title="Show my Work"
+              title="Get in Touch"
               icon={<FaLocationArrow />}
               position="right"
             />

@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  ,
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -100,7 +100,7 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "I_SWEAR_I_WILL_FINISH_IT_SOON!",
+    link: "I_SWEAR_I_WILL_FINISH_SOON!",
   },
 ];
 
@@ -173,29 +173,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer (Portfolio Project)",
+    desc: "Designed and developed a modern portfolio with Next.js, TypeScript, and TailwindCSS. Focused on performance, scalability, and animations that showcase real product-level quality.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Full-Stack Practice App",
+    desc: "Built a full-stack app with React, Node.js, and Supabase, implementing authentication, database integration, and responsive design — mirroring production-grade workflows.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "UI/UX & Interactive Components",
+    desc: "Created a set of reusable UI components with motion animations (Framer Motion, Aceternity UI-style). Prioritized accessibility, responsiveness, and clean developer experience.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Continuous Growth & Modern Tech Focus",
+    desc: "Actively learning and applying React, TypeScript, and Python (ML/AI) while expanding into computer science fundamentals through university. Focused on building a strong foundation to deliver real-world, production-ready solutions.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +205,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/bosTM-code",
   },
   {
     id: 2,
     img: "/twit.svg",
+    url: "https://x.com/",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/berezhnyi-sviatoslav/",
   },
 ];
