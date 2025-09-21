@@ -130,7 +130,7 @@
 
 /* --- Base styles --- */
 * {
-  @apply border-border !scroll-smooth;
+  @apply !scroll-smooth;
 }
 
 body {
