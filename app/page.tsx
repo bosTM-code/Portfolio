@@ -24,6 +24,7 @@ export default function Home() {
         <Approach />
         <Footer />
       </div>
+      <Analytics />
     </main>
   );
 }
