@@ -7,6 +7,7 @@ import { navItems } from "@/data";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
